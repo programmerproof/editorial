@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Editorial</b>',
 
     'logo_mini' => '<b>A</b>LT',
 
@@ -132,81 +132,91 @@ return [
             'text' => 'search',
             'search' => true,
         ],
-        ['header' => 'main_navigation'],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+        /*[
+            'text'    => 'ESPECÍFICOS',
+            'icon'    => 'fas fa-fw',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Departamento',
+                    'url'  => 'state',
+                    'icon' => 'fas fa-fw fa-flag',
                 ],
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
+                    'text' => 'Ciudad',
+                    'url'  => 'city',
+                    'icon' => 'fas fa-fw fa-flag',
                 ],
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Especialidad del Periodísta',
+                    'url'  => 'jrnspeciality',
+                    'icon' => 'fas fa-fw fa-address-book',
+                ],
+                [
+                    'text' => 'Tipo de Revista',
+                    'url'  => 'jrnspeciality',
+                    'icon' => 'fas fa-fw fa-bookmark',
+                ],
+                [
+                    'text' => 'Perioricidad de la Revista',
+                    'url'  => 'jrnspeciality',
+                    'icon' => 'fas fa-fw fa-calendar',
+                ],
+            ],
+        ],*/
+        [
+            'text'    => 'INFRAESTRUCTURA',
+            'icon'    => 'fas fa-fw',
+            'submenu' => [
+                [
+                    'text' => 'Sucursal',
+                    'url'  => 'branch',
+                    'icon' => 'far fa-fw fa-building',
                 ],
             ],
         ],
-        ['header' => 'labels'],
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
+            'text'    => 'PERSONAL',
+            'icon'    => 'fas fa-fw',
+            'submenu' => [
+                [
+                    'text' => 'Empleado',
+                    'url'  => 'employee',
+                    'icon' => 'far fa-fw fa-user',
+                ],
+                [
+                    'text' => 'Periodista',
+                    'url'  => 'journalist',
+                    'icon' => 'far fa-fw fa-address-card',
+                ],
+            ],
         ],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
+            'text'    => 'REVISTA',
+            'icon'    => 'fas fa-fw',
+            'submenu' => [
+                [
+                    'text' => 'Info. Básica',
+                    'url'  => 'magazine',
+                    'icon' => 'far fa-fw fa-address-book',
+                ],
+                [
+                    'text' => 'Número',
+                    'url'  => 'magissue',
+                    'icon' => 'far fa-fw fa-map',
+                ],
+                [
+                    'text' => 'Escritor',
+                    'url'  => 'writes',
+                    'icon' => 'far fa-fw fa-bookmark',
+                ],
+                [
+                    'text' => 'Venta',
+                    'url'  => 'sells',
+                    'icon' => 'far fa-fw fa-credit-card',
+                ],
+            ],
         ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'aqua',
-        ],
+
     ],
 
     /*

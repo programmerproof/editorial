@@ -26,4 +26,32 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function branch(){
+        return $this->belongsTo(Branch::class);
+    }
+
+    public function employee(){
+        return $this->belongsTo(Employee::class);
+    }
+
+    public function journalist(){
+        return $this->belongsTo(Journalist::class);
+    }
+
+    public function magazine(){
+        return $this->belongsTo(Magazine::class);
+    }
+
+    public function magissue(){
+        return $this->belongsTo(Magissue::class);
+    }
+
+    public function writes(){
+        return $this->belongsTo(Writes::class);
+    }
+
+    public function sells(){
+        return $this->belongsTo(Sells::class);
+    }
 }
